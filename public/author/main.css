@@ -6,7 +6,7 @@
   flex-direction: row;
   align-items: center;
   margin-top: 2px;
-  background: #f7f6b9;
+  background: #f0f0f6;
 }
 
 .main_frame .left_frame {
@@ -242,13 +242,62 @@
 .main_frame .midd_frame {
   position: relative;
   width: 970px;
-  height: 1259px;
+  height: 100%;
   margin-left: 30px;
   margin-right: 27px;
   display: flex;
   flex-direction: column;
+  background-color: white;
+}
+.main_frame .midd_frame .midd_1 {
+  width: 971px;
+  height: 454.328px;
+
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.midd_frame .midd_1 .absolute {
+  width: 16.016px;
+  height: 15.566px;
+  margin-top: 38px;
+  margin-left: 36px;
+  flex-shrink: 0;
+  stroke-width: 2px;
+  stroke: rgba(255, 180, 0, 0.8);
 }
 
+.midd_frame .midd_1 .midd_1_1 {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-bottom: 90px;
+}
+.midd_1_1 button {
+  display: flex;
+  padding: 16px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--Yellow, #ffb400);
+  border: none;
+}
+.midd_frame .midd_2 div {
+  margin-top: 148px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.midd_frame .midd_3 {
+  width: 971px;
+  height: 528px;
+  background-color: #f0f0f6;
+}
 .right_frame {
   position: relative;
   width: 108px;
