@@ -31,9 +31,12 @@ app.get("/author", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  res.render("harid");
+  res.render("reja");
 });
 
 const server = http.createServer(app);
 let PORT = 3000;
-server.listen(PORT, function () {});
+server.listen(PORT, function () {
+  console.log(`Server ${PORT} portda ishga tushdi`);
+  console.log("http://localhost:" + PORT);
+});
