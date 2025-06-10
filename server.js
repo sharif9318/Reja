@@ -9,7 +9,7 @@ mongodb.MongoClient.connect(connectionString, (err, client) => {
     console.log("ERROR on connection MongoDB");
   } else {
     console.log("MongoDB connection succeed");
-    // Export the database object
+
     module.exports.db = () => client.db("Reja");
     const app = require("./app");
     const server = http.createServer(app);
