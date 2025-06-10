@@ -86,3 +86,16 @@ function a_task(letter, word) {
 console.log(a_task("ㅖ", "우즈베키스탄"));
 console.log(a_task("$", "so'm"));
 console.log(a_task("a", "waytogofullstackdeveloper"));
+
+console.log("================taskB==================");
+function countDigits(str) {
+  let count = 0;
+  for (let char of str) {
+    if (!isNaN(char) && char !== " ") {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countDigits("jokjjoij97897fds43mnlkjkoj43"));
