@@ -16,7 +16,7 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 // 4 Routing code
-app.post("user entered /create-item", (req, res) => {
+app.post("/create-item", (req, res) => {
   console.log(req.body);
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
