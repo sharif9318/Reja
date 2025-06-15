@@ -8,6 +8,8 @@
 //   "endi dam oling, foydasi yoq endi", // 60
 // ];
 
+const e = require("express");
+
 // // // function maslahatBering(a, callback) {
 // // //   if (typeof a !== "number") {
 // // //     callback("insert a number", null);
@@ -145,3 +147,21 @@ shop.qoldiq();
 shop.sotish("non", 3);
 shop.qabul("cola", 4);
 shop.qoldiq();
+
+console.log("================TaskD===========");
+
+function taskD(a, b) {
+  let arrA = a.split("");
+  let arrB = b.split("");
+  let Eshmat = arrA.sort();
+  let Toshmat = arrB.sort();
+  if (Eshmat.join("") === Toshmat.join("")) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(taskD("MIT", "Massachusetts Institute of Technology"));
+console.log(taskD("MIT29", "MIT28"));
+console.log(taskD("MIT28", "82ITM"));
+console.log(taskD("MIT28", "822ITM"));
