@@ -165,3 +165,15 @@ console.log(taskD("MIT", "Massachusetts Institute of Technology"));
 console.log(taskD("MIT29", "MIT28"));
 console.log(taskD("MIT28", "82ITM"));
 console.log(taskD("MIT28", "822ITM"));
+
+// Asked AI if my function clean, correct and compact? It showed the following:
+
+console.log("================TaskD (AI corrected version)===========");
+
+function taskD(a, b) {
+  return a.split("").sort().join("") === b.split("").sort().join("");
+}
+console.log(taskD("MIT", "Massachusetts Institute of Technology"));
+console.log(taskD("MIT29", "MIT28"));
+console.log(taskD("MIT28", "82ITM"));
+console.log(taskD("MIT28", "822ITM"));
